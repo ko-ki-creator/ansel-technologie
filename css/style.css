@@ -1,0 +1,226 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Yumincho" "Hiragino Kaku Gothic Pro", sans-serif;
+    color: #333;
+    background-color: #EEE;
+}
+
+.wrap {
+    overflow-x: hidden;
+}
+
+:root {
+    --brack: #333;
+    --light-brack: #666;
+    --white: #fff;
+    --blue: #3B72D0;
+    --light-blue: #4C82DF;
+    --gold: #AA9E1B;
+    --red: #DF4242;
+    --orange: #DF871C;
+
+    --font-yumincho: "Yumincho", serif;
+    --font-hiragino: "Hiragino Kaku Gothic Pro", sans-serif;
+    --font-italiana: "italiana", serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.inner {
+    margin-bottom: 100px;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+#course,
+#flow,
+#faq {
+    scroll-margin-top: 100px;
+}
+
+/* セクションタイトル */
+
+
+
+
+/* ---------------------------------------------------
+PC
+--------------------------------------------------- */
+
+
+/* -----------------------------------------ヘッダー */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.header-logo {
+    display: grid;
+    place-content: center;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    height: 900px;
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+}
+
+.nav {
+    display: grid;
+    place-content: center;
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+
+        .nav-item {
+            width: 140px;
+            text-align: center;
+
+            > div {
+                width: 100%;
+                position: relative;
+                display: inline-block;
+                padding: 16px 0;
+
+                .ja {
+                    color: var(--light-brack);
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }
+
+                .en {
+                    color: var(--blue);
+                    font-size: 18px;
+                    font-family: var(--font-italiana);
+                    letter-spacing: 0.1em;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: var(--light-blue);
+                    transform: scale(0, 1);
+                    transform-origin: right top;
+                    transition: transform 0.3s;
+                }
+
+                &:hover:after {
+                    transform: scale(1, 1);
+                    transform-origin: left top;
+                }
+            }
+        }
+    }
+}
+
+.link {
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+}
+
+.dropDown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding: 20px 65px;
+    background-color: var(--white);
+    box-shadow: 0 3px 8px -2px #777;
+    color: initial;
+    transform: translate(0, 100%);
+    display: inline-block;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        border-style: solid;
+        border-width: 0 13px 13px 13px;
+        border-color: transparent transparent #ffffff;
+        translate: -50% -100%;
+    }
+}
+
+
+.link:hover > .dropDown,
+.link:focus > .dropDown {
+    display: block;
+}
+
+.dropDown_list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.dropDown_link {
+	padding: 10px 20px;
+	transition: color .15s;
+}
+
+
+
+.header-contact-btn {
+    width: 180px;
+    height: 100%;
+    background: linear-gradient(-45deg, #4C77BC 0%, #2E599E 100%);
+    display: grid;
+    place-content: center;
+
+    a {
+        width: 100%;
+
+        img {
+            margin: 0 auto 10px;
+        }
+
+        p {
+            color: var(--white);
+            font-size: 18px;
+            font-family: var(--font-italiana);
+            letter-spacing: 0.1em;
+        }
+    }
+}
