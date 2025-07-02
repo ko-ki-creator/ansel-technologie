@@ -13,12 +13,15 @@ $(function () {
     });
 });
 
+
+
 $(function () {
     // 大項目クリックで実行
-    $(".nav-item-sp button").click(function () {
-        $(this).toggleClass("show");
-        $(".dropDown_item_sp").toggleClass("show");
+    $(".nav-item-sp .nav-item").click(function (e) {
+        e.preventDefault();
+    // すでに開いているものは閉じる
+        $('.dropDown_list_sp').not($(this).next()).slideUp();
+    // 対象のドロップダウンをスライドダウン
+        $(this).next('.dropDown_list_sp').stop(true, true).slideToggle(300);
     });
-
-
 });
