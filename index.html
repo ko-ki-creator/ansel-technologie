@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,9 +20,9 @@
                 <div class="header-wrapper">
                     <div class="header-inner">
                         <div class="header-group">
-                            <div class="header-logo">
+                            <a href="#" class="header-logo">
                                 <img src="images/ansel-logo.png" alt="">
-                            </div>
+                            </a>
                             <div class="header-nav">
                                 <nav class="nav">
                                     <ul class="nav-list">
@@ -68,14 +69,79 @@
                                     <img src="images/mail-icon.png" alt="">
                                     <p>CONTACT</p>
                                 </a>
+                                <button class="hamburger" id="js-hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <p class="menu-open">menu</p>
+                                    <p class="menu-close">close</p>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item-sp">
+                                <a href="#">
+                                    <p class="ja">ホーム</p>
+                                    <p class="en">HOME</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <a href="#">
+                                    <p class="ja">会社情報</p>
+                                    <p class="en">COMPANY</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">事業内容</p>
+                                    <p class="en">SERVICE</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="">- エンジニアスクール</a></li>
+                                    <li class="dropDown_item_sp"><a href="">- カウンセリング申込</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">採用情報</p>
+                                    <p class="en">RECRUIT</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="">- 採用情報トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="">- IT経験者</a></li>
+                                    <li class="dropDown_item_sp"><a href="">- スクール生採用</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">お知らせ</p>
+                                    <p class="en">NEWS</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="">- お知らせ</a></li>
+                                    <li class="dropDown_item_sp"><a href="">- ブログ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header-contact-btn-sp">
+                        <img src="images/mail-icon.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </section>
         </header>
 
-        <main></main>
+        <main>
+        </main>
 
         <footer></footer>
     </div>

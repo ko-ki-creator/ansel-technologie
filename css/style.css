@@ -80,7 +80,11 @@ PC
 
 /* -----------------------------------------ヘッダー */
 .header-inner {
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 }
 
 .header-group {
@@ -92,6 +96,7 @@ PC
 .header-logo {
     display: grid;
     place-content: center;
+    min-width: 230px;
 }
 
 .header-nav {
@@ -160,15 +165,19 @@ PC
 
 .dropDown_list {
     display: none;
-    width: 100%;
+    width: 210px;
     position: absolute;
-    top: 100px;
-    left: 0;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 17px;
+    background-color: var(--white);
+    border-radius: 10px;
 
     &::before {
         content: "";
         position: absolute;
-        top: 20px;
+        top: 0px;
         left: 50%;
         border-style: solid;
         border-width: 0 13px 13px 13px;
@@ -177,28 +186,52 @@ PC
     }
 }
 
-.nav-list:hover .dropDown_list {
+.nav-item:hover .dropDown_list {
     display: block;
     visibility: visible;
 }
 
 .dropDown_item {
-    background-color: var(--white);
     width: 100%;
     transition: all .3s;
     position: relative;
-    /* padding: 20px 15px; */
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     a {
-        
+        white-space: nowrap;
+        width: 100%;
+        display: inline-block;;
+
+        &:hover {
+            font-weight: bold;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 2px;
+            background: var(--light-blue);
+            transform: scale(0, 1);
+            transform-origin: right top;
+            transition: transform 0.5s;
+        }
+
+        &:hover:after {
+            transform: scale(1, 1);
+            transform-origin: left top;
+        }
     }
 }
 
-
-
-
-
-.header-contact-btn {
+.header-contact-btn,
+.header-contact-btn-sp {
     display: grid;
     place-content: center;
     background: linear-gradient(-45deg, #4C77BC 0%, #2E599E 100%);
@@ -219,6 +252,234 @@ PC
     }
 
     &:hover {
-        opacity: 0.8;
+        opacity: 0.9;
     }
+}
+
+
+/* ハンバーガーメニュー */
+.hamburger {
+    width: 90px;
+    height: 100%;
+    background: linear-gradient(-45deg, #4C77BC 0%, #2E599E 100%);
+    padding: 0 20px;
+    display: none;
+
+    span {
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        margin-bottom: 10px;
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    p {
+        color: var(--white);
+        font-size: 18px;
+        font-family: var(--font-italiana);
+        letter-spacing: 0.1em;
+        line-height: 1em;
+    }
+
+    .menu-close {
+        display: none;
+    }
+}
+
+.hamburger span:nth-child(1) {
+    width: 100%;
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    width: 80%;
+    margin: 10px 0 10px auto;
+}
+
+.hamburger span:nth-child(3) {
+    width: 60%;
+    margin-left: auto;
+    top: 0;
+}
+
+
+/* ハンバーガーメニュークリック後のスタイル */
+.hamburger.active {
+    background: var(--white);
+    border: 1px solid var(--blue);
+
+    span {
+        background-color: var(--blue);
+    }
+
+    .menu-open {
+        display: none;
+    }
+
+    .menu-close {
+        display: block;
+        color: var(--blue);
+    }
+}
+
+.hamburger.active span:nth-child(1) {
+    top: 12px;
+    transform: rotate(45deg);
+    height: 2px;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: -13px;
+    width: 100%;
+    transform: rotate(-45deg);
+    height: 2px;
+}
+
+.navigation-container.active {
+    transform: translate(0);
+}
+
+
+/* -----------------------------------------ナビゲーション */
+.navigation {
+    margin-top: 90px;
+}
+
+.navigation-container {
+    position: fixed;
+    /* top: 0; */
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: #F7F7F7;
+    transition: ease .5s;
+    z-index: 98;
+    overflow-y: scroll;
+
+    .header-contact-btn-sp {
+        width: 180px;
+        height: 90px;
+        margin: 0 auto;
+    }
+}
+
+.navigation-container.active {
+    transform: translate(0);
+}
+
+.nav-sp {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.nav-item-sp {
+
+    > a,
+    .nav-item {
+        width: 100%;
+        height: 70px;
+        display: inline-block;
+        padding: 15px;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        transition: ease .3s;
+        text-align: left;
+
+        .ja {
+            color: var(--light-brack);
+            font-weight: bold;
+            letter-spacing: 0.15em;
+        }
+
+        .en {
+            color: var(--blue);
+            font-size: 12px;
+            font-family: var(--font-italiana);
+            letter-spacing: 0.1em;
+        }
+
+        &::after {
+            content: '';
+            background-image: url(/images/sp-arrow.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            background-color: var(--light-blue);
+        }
+
+        &:hover .ja,
+        &:hover .en {
+            color: var(--white);
+        }
+
+        &::after:hover {
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(319deg) brightness(106%) contrast(102%);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+SP
+--------------------------------------------------- */
+@media screen and (max-width: 767px) {
+    .inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+
+    /* セクションタイトル */
+
+
+    /* -----------------------------------------ヘッダー */
+    .hamburger {
+        display: block;
+    }
+
+    .nav,
+    .header-contact-btn {
+        display: none;
+    }
+
+    /* -----------------------------------------ナビゲーション */
+    
+
 }
