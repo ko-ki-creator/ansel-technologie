@@ -3,9 +3,8 @@ html {
 }
 
 body {
-    font-family: "Yumincho" "Hiragino Kaku Gothic Pro", sans-serif;
+    font-family: "YuMincho", "Hiragino Kaku Gothic Pro", sans-serif;
     color: #333;
-    background-color: #EEE;
 }
 
 .wrap {
@@ -22,7 +21,7 @@ body {
     --red: #DF4242;
     --orange: #DF871C;
 
-    --font-yumincho: "Yumincho", serif;
+    --font-yumincho: "YuMincho", serif;
     --font-hiragino: "Hiragino Kaku Gothic Pro", sans-serif;
     --font-italiana: "italiana", serif;
 }
@@ -54,6 +53,11 @@ ul, li {
     padding: 0;
 }
 
+p {
+    font-family: var(--font-hiragino);
+    line-height: 1.6em;
+}
+
 .pc {
     display: block;
 }
@@ -68,7 +72,46 @@ ul, li {
     scroll-margin-top: 100px;
 }
 
+
+
 /* セクションタイトル */
+.heading-btn {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+
+    a {
+        margin-top: 20px;
+        height: fit-content;
+        transition: ease .3s;
+
+
+        &:hover {
+            background-color: var(--blue);
+            border-radius: 15px;
+            fill: brightness(0) invert(1);
+        }
+    }
+}
+
+.heading {
+    margin-bottom: 50px;
+
+    h2 {
+        color: var(--blue);
+        font-size: 60px;
+        font-family: var(--font-italiana);
+        font-weight: normal;
+        letter-spacing: 0.02em;
+        line-height: 1.2em;
+    }
+
+    h3 {
+        font-size: 21px;
+        font-weight: normal;
+        letter-spacing: 0.03em;
+    }
+}
 
 
 
@@ -131,6 +174,7 @@ PC
                     color: var(--light-brack);
                     font-size: 18px;
                     font-weight: 600;
+                    font-family: var(--font-hiragino);
                     margin-bottom: 5px;
                 }
 
@@ -202,6 +246,7 @@ PC
     }
 
     a {
+        font-family: var(--font-hiragino);
         white-space: nowrap;
         width: 100%;
         display: inline-block;;
@@ -346,14 +391,15 @@ PC
 }
 
 
+
 /* -----------------------------------------ナビゲーション */
 .navigation {
     margin-top: 90px;
 }
 
 .navigation-container {
+    display: none;
     position: fixed;
-    /* top: 0; */
     right: 0;
     width: 100vw;
     height: 100%;
@@ -394,6 +440,7 @@ PC
         .ja {
             color: var(--light-brack);
             font-weight: bold;
+            font-family: var(--font-hiragino);
             letter-spacing: 0.15em;
         }
 
@@ -457,6 +504,7 @@ PC
         border-bottom: 1px solid #ddd;
         width: 100%;
         color: var(--light-brack);
+        font-family: var(--font-hiragino);
         letter-spacing: 0.15em;
         transition: ease .3s;
         position: relative;
@@ -483,6 +531,279 @@ PC
         }
     }
 }
+
+
+
+/* -----------------------------------------
+トップページ：ファーストビュー
+----------------------------------------- */
+.fv-wrapper {
+    margin-bottom: 100px;
+}
+
+.fv-back {
+    display: flex;
+    width: 100vw;
+    height: 713px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.fv-inner {
+    position: relative;
+
+    h2 {
+        color: var(--white);
+        font-size: clamp(1.875rem, 1.215rem + 2.82vw, 3.75rem);
+        font-weight: normal;
+        letter-spacing: 0.02em;
+        text-shadow: 2px 2px 5px rgba(121, 139, 165, 1);
+        position: absolute;
+        top: 48%;
+        left: 8%;
+        transform: translateY(-48%);
+
+        span {
+            font-size: clamp(2.813rem, 1.822rem + 4.23vw, 5.625rem);
+        }
+    }
+}
+
+.fv-news-group {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    height: 48px;
+
+    h3 {
+        color: var(--white);
+        font-size: 21px;
+        font-weight: 400;
+        font-family: var(--font-italiana);
+        background-color: var(--gold);
+        padding: 10px 20px;
+        height: fit-content;
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.fv-news-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: var(--white);
+    height: 100%;
+    padding: 10px 20px;
+
+    p {
+        font-family: var(--font-hiragino);
+    }
+}
+
+.fv-news-date-thema {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fv-scroll {
+    position: absolute;
+    bottom: 105px;
+    left: 15px;
+
+    p {
+        color: var(--white);
+        font-family: var(--font-italiana);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        position: relative;
+        letter-spacing: 0.02em;
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 90px;
+            background-color: var(--white);
+            position: absolute;
+            top: 70px;
+            left: 50%;
+        }
+    }
+}
+
+
+
+/* -----------------------------------------ビジョン */
+.vision {
+    background-image: url(/images/vision-blue-circle.png);
+    background-size: 530px 530px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.vision-container {
+    position: relative;
+    height: 630px;
+
+    .meeting-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .woman-img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.vision-content {
+    display: flex;
+
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        width: 50%;
+        letter-spacing: 0.03em;
+    }
+
+    p {
+        width: 50%;
+    }
+}
+
+
+
+
+/* -----------------------------------------ミッション */
+.mission {
+    background-image: url(/images/mission-blue-circle.png);
+    background-size: 530px 530px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-content {
+    width: 50%;
+
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 50px;
+        letter-spacing: 0.03em;
+    }
+}
+
+
+
+/* -----------------------------------------サービス */
+.service {
+    background-image: url(/images/service-blue-circle.png);
+    background-size: 530px 530px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 500px;
+    margin-bottom: 100px;
+}
+
+.service-inner {
+    display: flex;
+}
+
+.service-left {
+    width: 55%;
+}
+
+.service-content {
+    width: 100%;
+
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 50px;
+        letter-spacing: 0.03em;
+    }
+
+    p {
+        width: 85%;
+    }
+}
+
+.service-group {
+    position: relative;
+    width: 48%;
+    height: 500px;
+
+    .service-item {
+        width: 270px;
+        height: 270px;
+        border-radius: 135px;
+        border: 1px solid #3B72D0;
+        text-align: center;
+        padding-top: 50px;
+
+        .ttl {
+            font-size: 12px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-family: var(--font-hiragino);
+            margin: 8px auto;
+        }
+
+        .detail {
+            padding: 0 20px;
+        }
+    }
+}
+
+.it-solution {
+    background-color: #B8D2FF;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+}
+
+.education {
+    background-color: #CCE0FF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.in-house {
+    background-color: #DDEAFF;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -518,6 +839,17 @@ SP
 
 
     /* セクションタイトル */
+    .heading {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
 
 
     /* -----------------------------------------ヘッダー */
@@ -531,6 +863,202 @@ SP
     }
 
     /* -----------------------------------------ナビゲーション */
-    
+    .navigation-container {
+        display: block;
+    }
+
+
+
+    /* -----------------------------------------
+トップページ：ファーストビュー
+----------------------------------------- */
+.fv-wrapper {
+    margin-bottom: 50px;
+}
+
+    .fv-back {
+        flex-direction: column-reverse;
+        height: 100%;
+
+        .blue-logo {
+            height: 388px;
+            object-fit: cover;
+        }
+    }
+
+    .fv-inner {
+
+        h2 {
+            top: 50%;
+            left: 2%;
+            transform: translateY(-50%);
+        }
+    }
+
+    .fv-news-group {
+
+        h3 {
+            width: 22%;
+        }
+    }
+
+    .fv-news-content {
+        gap: 10px;
+        width: 80%;
+
+        p {
+            text-align: left;
+            width: 100%;
+        }
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .fv-news-date-thema {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .fv-scroll {
+        left: -1%;
+
+        p {
+            font-size: 13px;
+
+            &::after {
+                top: 60px;
+            }
+        }
+    }
+
+
+
+    /* -----------------------------------------ビジョン */
+    .vision {
+        background-size: 280px 280px;
+        background-position: left center;
+    }
+
+    .vision-container {
+        height: 670px;
+
+        .meeting-img {
+            width: 90%;
+        }
+
+        .woman-img {
+            width: 55%;
+            position: absolute;
+            top: 90%;
+            left: 0;
+            transform: translateY(-90%);
+        }
+    }
+
+    .vision-content {
+        flex-direction: column;
+
+        h4 {
+            font-size: 21px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+
+    /* -----------------------------------------ミッション */
+    .mission {
+        background-size: 315px 315px;
+        background-position: center bottom;
+    }
+
+    .mission-container {
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            width: 80%;
+            margin-left: auto;
+        }
+    }
+
+    .mission-content {
+        width: 100%;
+
+        h4 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    /* -----------------------------------------サービス */
+    .service {
+        background-position: left bottom;
+        height: 700px;
+    }
+
+    .service-inner {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .service-left {
+        width: 100%;
+    }
+
+    .service-content {
+        width: 100%;
+        margin-bottom: 20px;
+
+        h4 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .service-group {
+        position: relative;
+        width: 100%;
+        height: 630px;
+
+        .service-item {
+            width: 230px;
+            height: 230px;
+            padding-top: 0;
+            display: grid;
+            place-content: center;
+
+            h5 {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .education {
+        top: 32%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .in-house {
+        top: 64%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
 
 }
