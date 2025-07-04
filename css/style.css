@@ -24,6 +24,7 @@ body {
     --font-yumincho: "YuMincho", serif;
     --font-hiragino: "Hiragino Kaku Gothic Pro", sans-serif;
     --font-italiana: "italiana", serif;
+    --font-futura: "Futura", sans-serif;
 }
 
 button {
@@ -799,6 +800,252 @@ PC
 
 
 
+/* -----------------------------------------リクルート */
+.recruit {
+    background-image: url(/images/recruit-blue-circle.png);
+    background-size: 530px 530px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    height: 690px;
+    margin-bottom: 100px;
+}
+
+.recruit-container {
+    display: flex;
+}
+
+.recruit-content {
+
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 50px;
+        letter-spacing: 0.03em;
+    }
+
+    > p {
+        margin-bottom: 50px;
+    }
+}
+
+.recruit-btn {
+    width: 30%;
+
+    a {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--light-blue);
+        transition: ease .3s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--light-blue);
+            padding: 15px;
+        }
+    }
+}
+
+.recruit-img {
+    position: relative;
+    width: 50%;
+
+    .recruit-mens {
+        position: absolute;
+        z-index: 10;
+    }
+
+    .recruit-woman {
+        position: absolute;
+        top: 100px;
+        right: -70px;
+        z-index: 0;
+    }
+}
+
+
+
+/* -----------------------------------------ブログ */
+.blog-inner {
+    position: relative;
+}
+
+.blog-arrow {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    p {
+        color: var(--blue);
+        font-family: var(--font-italiana);
+    }
+}
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+
+    img {
+        width: 300px;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+}
+
+.blog-date-category {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .category {
+        border: 1px solid var(--light-brack);
+        padding: 0 15px;
+        line-height: 1em;
+        height: fit-content;
+    }
+}
+
+.blog-group {
+    color: var(--light-brack);
+    letter-spacing: 0.02em;
+}
+
+
+
+/* -----------------------------------------フッター */
+.footer {
+    background-color: var(--light-blue);
+    padding-top: 50px;
+}
+
+.entry-btn {
+    display: flex;
+    gap: 20px;
+    background-color: var(--white);
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    transition: ease .3s;
+
+    &:hover {
+        color: var(--blue);
+        border-radius: 30px;
+    }
+
+    p {
+        font-weight: bold;
+        letter-spacing: 0.15em;
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+
+    h2 {
+        font-size: 21px;
+        font-family: var(--font-futura);
+        font-weight: normal;
+        letter-spacing: 0.15em;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-company p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-sns {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: var(--white);
+        transition: ease .3s;
+
+        p {
+            font-family: var(--font-futura);
+            letter-spacing: 0.15em;
+        }
+
+        &:hover {
+            color: #ddd;
+        }
+    }
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav-list-left,
+.footer-nav-list-right {
+
+    a, button {
+        color: var(--white);
+        font-family: var(--font-hiragino);
+    }
+}
+
+.footer-nav-list-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-nav-item > a,
+.footer-nav-item > button {
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.footer-nav-item > a {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.footer-nav-item a:hover {
+    color: #ddd;
+}
+
+.footer-dropDown-item {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    color: var(--white);
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
 
 
 
@@ -1002,7 +1249,7 @@ SP
     /* -----------------------------------------サービス */
     .service {
         background-position: left bottom;
-        height: 700px;
+        height: 950px;
     }
 
     .service-inner {
@@ -1057,6 +1304,140 @@ SP
         left: 50%;
         transform: translateX(-50%);
     }
+
+
+
+    /* -----------------------------------------リクルート */
+    .recruit {
+        height: 920px;
+        margin-bottom: 50px;
+    }
+
+    .recruit-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .recruit-content {
+
+        h4 {
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+
+        > p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .recruit-btn {
+        width: 50%;
+    }
+
+    .recruit-img {
+        position: relative;
+        width: 100%;
+
+        .recruit-mens {
+            width: 70%;
+            left: -50px;
+        }
+
+        .recruit-woman {
+            width: 70%;
+            top: 50px;
+            right: -15px;
+        }
+    }
+
+
+    /* -----------------------------------------ブログ */
+    .blog-arrow {
+        top: 50px;
+        right: 15px;
+    }
+
+    .blog-container {
+        display: flex;
+        gap: 20px;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;
+
+        img {
+            width: 300px;
+            height: 180px;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    .blog-date-category {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .category {
+            border: 1px solid var(--light-brack);
+            padding: 0 15px;
+            line-height: 1em;
+            height: fit-content;
+        }
+    }
+
+    .blog-group {
+        color: var(--light-brack);
+        letter-spacing: 0.02em;
+    }
+
+
+
+    /* -----------------------------------------フッター */
+    .footer-inner {
+        margin-bottom: 50px;
+        padding: 0 15px;
+    }
+
+    .entry-btn {
+        margin: 0 auto 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+
+        h2 {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .footer-company {
+        width: fit-content;
+        margin: 0 auto 20px;
+    }
+
+    .footer-sns {
+        gap: 20px;
+        margin-bottom: 30px;
+        justify-content: center;
+
+        a {
+            gap: 10px;
+        }
+    }
+
+    .footer-nav {
+        justify-content: center;
+    }
+
+
+
 
 
 
