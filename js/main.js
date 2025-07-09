@@ -25,3 +25,17 @@ $(function () {
         $(this).next('.dropDown_list_sp').stop(true, true).slideToggle(300);
     });
 });
+
+
+
+$(document).on('ready', function() {
+    $(".gallery-content").slick({
+        // autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        // dotsClass: 'slide-dots',
+        arrows: true,
+        prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+        nextArrow: '<div class="slide-arrow next-arrow"></div>'
+    });
+});

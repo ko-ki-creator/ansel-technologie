@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF | エンジニア教育事業 | Ansel Technologies</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <!-- ヘッダー -->
+            <section class="header">
+                <div class="header-wrapper">
+                    <div class="header-inner">
+                        <div class="header-group">
+                            <a href="#" class="header-logo">
+                                <img src="images/ansel-logo.png" alt="アンセルテクノロジーロゴ">
+                            </a>
+                            <div class="header-nav">
+                                <nav class="nav">
+                                    <ul class="nav-list">
+                                        <li class="nav-item">
+                                            <a href="company.html">
+                                                <p class="ja">会社概要</p>
+                                                <p class="en">COMPANY</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">事業内容</p>
+                                                <p class="en">SERVICE</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="service.html">事業内容トップ</a></li>
+                                                <li class="dropDown_item"><a href="service_education.html">エンジニアスクール</a></li>
+                                                <li class="dropDown_item"><a href="service_counseling.html">カウンセリング申込</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">採用情報</p>
+                                                <p class="en">RECRUIT</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="recruit.html">採用情報トップ</a></li>
+                                                <li class="dropDown_item"><a href="recruit_experienced.html">IT経験者採用</a></li>
+                                                <li class="dropDown_item"><a href="recruit_school.html">スクール生採用</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">お知らせ</p>
+                                                <p class="en">NEWS</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="news.html">お知らせ</a></li>
+                                                <li class="dropDown_item"><a href="blog.html">ブログ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="" class="header-contact-btn">
+                                    <img src="images/mail-icon.png" alt="お問い合わせアイコン">
+                                    <p>CONTACT</p>
+                                </a>
+                                <button class="hamburger" id="js-hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <p class="menu-open">menu</p>
+                                    <p class="menu-close">close</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item-sp">
+                                <a href="#">
+                                    <p class="ja">ホーム</p>
+                                    <p class="en">HOME</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <a href="company.html">
+                                    <p class="ja">会社情報</p>
+                                    <p class="en">COMPANY</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">事業内容</p>
+                                    <p class="en">SERVICE</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="service.html">- 事業内容トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_education.html">- エンジニアスクール</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_counseling.html">- カウンセリング申込</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">採用情報</p>
+                                    <p class="en">RECRUIT</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="recruit.html">- 採用情報トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_experienced.html">- IT経験者</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_school.html">- スクール生採用</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">お知らせ</p>
+                                    <p class="en">NEWS</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="news.html">- お知らせ</a></li>
+                                    <li class="dropDown_item_sp"><a href="blog.html">- ブログ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header-contact-btn-sp">
+                        <img src="images/mail-icon.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <!-- --------------------
+        エンジニア教育事業
+        -------------------- -->
+
+        <main>
+            <!-- ページビジュアル -->
+            <section class="page-visual">
+                <div class="page-wrapper">
+                    <div class="page-inner">
+                        <div class="page-back">
+                            <img class="page-visual-logo" src="images/page-visual-logo.png" alt="アンセルロゴ">
+                            <img class="page-img" src="images/academy-back.png" alt="エンジニア教育事業">
+                        </div>
+                        <h2>エンジニア教育事業</h2>
+                        <h3>ACADEMY</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 特徴 -->
+            <section class="feature">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Feature</h2>
+                            <h3>特徴</h3>
+                        </div>
+                        <div class="feature-container">
+                            <div class="feature-content">
+                                <img src="images/feature1.png" alt="">
+                                <p>現役エンジニアが<br>あなたのコードをレビュー</p>
+                            </div>
+                            <div class="feature-content">
+                                <img src="images/feature2.png" alt="">
+                                <p>資格取得金額<br>全額補助</p>
+                            </div>
+                            <div class="feature-content">
+                                <img src="images/feature3.png" alt="">
+                                <p>他の生徒と交流しながら<br>進められる</p>
+                            </div>
+                            <div class="feature-content">
+                                <img src="images/feature4.png" alt="">
+                                <p>いつでも何度でも<br>講師に質問できる</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- カリキュラム -->
+            <section class="curriculum">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Curriculum</h2>
+                            <h3>カリキュラム</h3>
+                            <p>
+                                活躍できる高い技術の獲得を目指し、<br>Ansel Tech Academyは長く難しいカリキュラムを用意しています。
+                            </p>
+                        </div>
+                        <div class="curriculum-container">
+                            <div class="curriculum-content">
+                                <div class="curriculum-group">
+                                    <h2>フロントエンド入門</h2>
+                                    <p>
+                                        フロントエンド入門カリキュラムでは、HTML,CSSを中心に基礎的なマークアップ言語を学習します。全くプログラミングに触れたことのない方、フロントエンドに興味がある方はここから始めることをおすすめしています。
+                                    </p>
+                                </div>
+                                <div class="curriculum-img">
+                                    <img src="images/html.png" alt="HTML">
+                                    <img src="images/css.png" alt="CSS">
+                                    <img src="images/sass.png" alt="SaSS">
+                                </div>
+                            </div>
+                            <div class="curriculum-content">
+                                <div class="curriculum-group">
+                                    <h2>フロントエンド基礎</h2>
+                                    <p>
+                                        フロントエンド基礎カリキュラムでは、JavaScriptとそのフレームワーク・ライブラリを中心に学びます。学習できるフレームワークは、Vue.js,Next.jsです。ここを学び終えた頃には、簡単なWEB制作ができるようになります。                                    </p>
+                                </div>
+                                <div class="curriculum-img">
+                                    <img src="images/js.png" alt="JavaScript">
+                                    <img src="images/vue.png" alt="Vue">
+                                    <img src="images/next.png" alt="Next">
+                                    <img src="images/jquery.png" alt="jQuery">
+                                </div>
+                            </div>
+                            <div class="curriculum-content">
+                                <div class="curriculum-group">
+                                    <h2>バックエンド入門</h2>
+                                    <p>
+                                        バックエンド入門カリキュラムでは、PHPとJavaを学ぶことができます。それぞれ片方だけでも両方でも受講することができますので、それぞれの志向性に応じて進めることが可能です。JavaのフレームワークはSpringBoot、PHPのフレームワークはLaravelです。
+                                    </p>
+                                </div>
+                                <div class="curriculum-img">
+                                    <img src="images/java.png" alt="Java">
+                                    <img src="images/php.png" alt="PHP">
+                                    <img src="images/laravel.png" alt="Laravel">
+                                </div>
+                            </div>
+                            <div class="curriculum-content">
+                                <div class="curriculum-group">
+                                    <h2>インフラクラウド基礎</h2>
+                                    <p>
+                                        インフラクラウド基礎カリキュラムでは、AWSを中心にクラウド技術を学びます。AWSは認定資格が豊富にそんざいするので、その取得を目指して学習を進めていきましょう。
+                                    </p>
+                                </div>
+                                <div class="curriculum-img">
+                                    <img src="images/aws.png" alt="AWS">
+                                    <img src="images/docker.png" alt="Docker">
+                                    <img src="images/linux.png" alt="Linux">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- スクール生の声 -->
+            <section class="voice">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Voice</h2>
+                            <h3>スクール生の声</h3>
+                        </div>
+                        <div class="voice-container">
+                            <div class="voice-content">
+                                <img src="images/voice1.png" alt="東京都20代女性">
+                                <h4>A.K</h4>
+                                <h5>東京都/20代/女性</h5>
+                                <p>
+                                    私は全くの未経験からプログラミングを学習し始めました。HTML、CSSからはじめ、JavaScript、PHP、Linuxと一通りのカリキュラムを約1年ほど学習し、エンジニアとしてデビューしました。最初の案件を見つけるのにとても苦戦しましたが、WEB制作から入り、現在はJavaScriptを用いて開発業務に携わっています。
+                                </p>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice2.png" alt="東京都20代女性">
+                                <h4>K.O</h4>
+                                <h5>東京都/20代/女性</h5>
+                                <p>
+                                    職業訓練校で元々ある程度プログラミング学習はしていましたが、それだけでは不安があったので、Ansel Techアカデミーを受講しました。元々少し触っていたにも関わらず、Techアカデミーは難しく、他の人よりも時間がかかりました。その分先生からちゃんとフィードバックを貰えたり、他の生徒と会話しながら学習ができるので、よかったです。
+                                </p>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice3.png" alt="東京都20代女性">
+                                <h4>Y.H</h4>
+                                <h5>東京都/20代/男性</h5>
+                                <p>
+                                    とにかく難しいです。元々プロゲートを結構やっていたつもりでしたが、最初から全くわかりませんでした。ただ、調べたり先生に聞きながらカリキュラムを進めていくうちに、エンジニアとしてリサーチしながら仕事を進める感覚を掴むことができました。今はエンジニアの現場に入っていますが、苦労しながらも勉強して良かったと思っています。
+                                </p>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice4.png" alt="東京都20代女性">
+                                <h4>K.K</h4>
+                                <h5>東京都/20代/女性</h5>
+                                <p>
+                                    私は全くの未経験からプログラミングを学習し始めました。HTML、CSSからはじめ、JavaScript、PHP、Linuxと一通りのカリキュラムを約1年ほど学習し、エンジニアとしてデビューしました。最初の案件を見つけるのにとても苦戦しましたが、Web制作から入り、現在はJavaSctiptを用いて開発業務に携わっています。
+                                </p>
+                            </div>
+                            <div class="voice-content">
+                                <img src="images/voice5.png" alt="東京都20代女性">
+                                <h4>R.S</h4>
+                                <h5>東京都/20代/男性</h5>
+                                <p>
+                                    エンジニアにキャリアチェンジをしたいと思い、アンセルテックアカデミーを受けました。学習システムの仕組み上、他の生徒がどのくらい進んでいるか、どういうフィードバックを受けているか、どういうコードを書いているかが見れるので、1人ではなくみんなで勉強をしている感覚があり続けることができました。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 他スクールとの違い -->
+            <section class="diiference">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Difference</h2>
+                            <h3>他スクールとの違い</h3>
+                        </div>
+                        <div class="scroll-arrow">
+                            <p>scroll</p>
+                            <img src="images/scroll-arrow.png" alt="">
+                        </div>
+                        <div class="difference-content">
+                            <table>
+                                <tr>
+                                    <th class="th-space"></th>
+                                    <th class="ansel">Ansel</th>
+                                    <th class="head">A社</th>
+                                    <th class="head">B社</th>
+                                    <th class="head">C社</th>
+                                </tr>
+                                <tr>
+                                    <td class="column">期間</td>
+                                    <td class="ansel-item">6ヶ月〜</td>
+                                    <td>1ヶ月</td>
+                                    <td>1,4,6ヶ月</td>
+                                    <td>3ヶ月</td>
+                                </tr>
+                                <tr>
+                                    <td class="column">担当講師</td>
+                                    <td class="ansel-item">審査に通過した<br>現役のエンジニア</td>
+                                    <td>なし</td>
+                                    <td>非公開</td>
+                                    <td>エンジニア</td>
+                                </tr>
+                                <tr>
+                                    <td class="column">価格</td>
+                                    <td class="ansel-item">498,000円〜</td>
+                                    <td>3,900円〜</td>
+                                    <td>29,800円〜</td>
+                                    <td>80,000円〜</td>
+                                </tr>
+                                <tr>
+                                    <td class="column">学習難易度</td>
+                                    <td class="ansel-item">高い</td>
+                                    <td>低い</td>
+                                    <td>一般的</td>
+                                    <td>一般的</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 申込みの流れ -->
+            <section class="flow">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Flow</h2>
+                            <h3>申込みの流れ</h3>
+                        </div>
+                        <div class="flow-container">
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>1</p>
+                                    <h4>お問い合わせ</h4>
+                                </div>
+                                <p>興味があれば応募フォームより面談の申込みをお願いします。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>2</p>
+                                    <h4>無料面談</h4>
+                                </div>
+                                <p>エンジニアのキャリアに詳しい担当が、無料で面談を実施いたします。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>3</p>
+                                    <h4>プラン確定</h4>
+                                </div>
+                                <p>あなたにあったプランを一緒に考え、学習プランを作成します。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>4</p>
+                                    <h4>利用開始</h4>
+                                </div>
+                                <p class="no-border">学習環境を停止します。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="education-cta">
+                <div class="education-wrapper">
+                    <div class="education-inner">
+                        <div class="education-cta-logo">
+                            <img src="images/cta-logo.png" alt="">
+                            <h4>
+                                Ansel<br>
+                                Tech<br>
+                                Academy<br>
+                            </h4>
+                        </div>
+                        <div class="education-txt">
+                            <h5>
+                                現役エンジニアに学ぶ<br>
+                                ハイレベルプログラミングスクール
+                            </h5>
+                            <p>
+                                厳選された現役エンジニアが講師を担当する、<br>
+                                ハイレベルなプログラミングスクールを提供しています。<br>
+                                スクール受講中は、IT系資格取得代を全額補助！
+                            </p>
+                            <a href="#" class="counseling-cta">
+                                <p>無料カウンセリングに申込む</p>
+                                <img src="images/counseling-cta-arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer-inner">
+                        <a href="" class="entry-btn">
+                            <p>採用エントリー</p>
+                            <img src="images/arrow-entry.svg" alt="">
+                        </a>
+                        <div class="footer-container">
+                            <div class="footer-content">
+                                <h2>株式会社ANSEL TECHNOLOGIES</h2>
+                                <div class="footer-company">
+                                    <p>
+                                        東京本社<br>
+                                        〒101-0051 東京都千代田区神田神保町2丁目38-11岩田ビル1F
+                                    </p>
+                                    <p>
+                                        大阪支社<br>
+                                        〒556-0011 大阪府大阪市浪速区難波中2丁目10-70 パークスタワー19F
+                                    </p>
+                                    <p>
+                                        札幌支社<br>
+                                        〒060-0004 北海道札幌市中央区北4条西4丁目1-7 MMS札幌駅前ビル1階
+                                    </p>
+                                    <p>
+                                        福岡支社<br>
+                                        〒810-0001 福岡県福岡市中央区天神1-4-1 西日本新聞会館16階 (天神スカイホール内)                                    </p>
+                                </div>
+                                <div class="footer-sns">
+                                    <a href="">
+                                        <img src="images/instagram_logo.png" alt="Instagram">
+                                        <p>Instagram</p>
+                                    </a>
+                                    <a href="">
+                                        <img src="images/wantedly_logo.png" alt="Wantedly">
+                                        <p>Wantedly</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav-list-left">
+                                    <li class="footer-nav-item">
+                                        <a href="">ホーム</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <a href="">会社概要</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>事業内容</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- エンジニアスクール</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- カウンセリング申込</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list-right">
+                                    <li class="footer-nav-item">
+                                        <button>採用情報</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- 採用情報トップ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- IT経験者</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- スクール生採用</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>お知らせ</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- お知らせ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- ブログ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <p class="copyright">©︎ Ansel Techonologies, inc. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="./js/main.js"></script>
+</body>
+</html>50%
