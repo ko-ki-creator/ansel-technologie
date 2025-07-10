@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF | 採用情報 | Ansel Technologies</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <!-- ヘッダー -->
+            <section class="header">
+                <div class="header-wrapper">
+                    <div class="header-inner">
+                        <div class="header-group">
+                            <a href="#" class="header-logo">
+                                <img src="images/ansel-logo.png" alt="アンセルテクノロジーロゴ">
+                            </a>
+                            <div class="header-nav">
+                                <nav class="nav">
+                                    <ul class="nav-list">
+                                        <li class="nav-item">
+                                            <a href="company.html">
+                                                <p class="ja">会社概要</p>
+                                                <p class="en">COMPANY</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">事業内容</p>
+                                                <p class="en">SERVICE</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="service.html">事業内容トップ</a></li>
+                                                <li class="dropDown_item"><a href="service_education.html">エンジニアスクール</a></li>
+                                                <li class="dropDown_item"><a href="service_counseling.html">カウンセリング申込</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">採用情報</p>
+                                                <p class="en">RECRUIT</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="recruit.html">採用情報トップ</a></li>
+                                                <li class="dropDown_item"><a href="recruit_experienced.html">IT経験者採用</a></li>
+                                                <li class="dropDown_item"><a href="recruit_school.html">スクール生採用</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">お知らせ</p>
+                                                <p class="en">NEWS</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="news.html">お知らせ</a></li>
+                                                <li class="dropDown_item"><a href="blog.html">ブログ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="" class="header-contact-btn">
+                                    <img src="images/mail-icon.png" alt="お問い合わせアイコン">
+                                    <p>CONTACT</p>
+                                </a>
+                                <button class="hamburger" id="js-hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <p class="menu-open">menu</p>
+                                    <p class="menu-close">close</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item-sp">
+                                <a href="#">
+                                    <p class="ja">ホーム</p>
+                                    <p class="en">HOME</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <a href="company.html">
+                                    <p class="ja">会社情報</p>
+                                    <p class="en">COMPANY</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">事業内容</p>
+                                    <p class="en">SERVICE</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="service.html">- 事業内容トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_education.html">- エンジニアスクール</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_counseling.html">- カウンセリング申込</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">採用情報</p>
+                                    <p class="en">RECRUIT</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="recruit.html">- 採用情報トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_experienced.html">- IT経験者</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_school.html">- スクール生採用</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">お知らせ</p>
+                                    <p class="en">NEWS</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="news.html">- お知らせ</a></li>
+                                    <li class="dropDown_item_sp"><a href="blog.html">- ブログ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header-contact-btn-sp">
+                        <img src="images/mail-icon.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <!-- --------------------
+        採用情報
+        -------------------- -->
+
+        <main>
+            <!-- ページビジュアル -->
+            <section class="page-visual">
+                <div class="page-wrapper">
+                    <div class="page-inner">
+                        <div class="page-back">
+                            <img class="page-visual-logo" src="images/page-visual-logo.png" alt="アンセルロゴ">
+                            <img class="page-img" src="images/recruit-back.png" alt="採用情報">
+                        </div>
+                        <h2>採用情報</h2>
+                        <h3>RECRUIT</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- メッセージ -->
+            <section class="feature">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Message</h2>
+                            <h3>メッセージ</h3>
+                        </div>
+                        <div class="message-content">
+                            <img src="images/message-img.png" alt="">
+                            <div class="message-group">
+                                <h4>
+                                    日本を代表する価値あるIT企業、<br>
+                                    一緒に創ってみませんか？
+                                </h4>
+                                <p>
+                                    我々はまだまだ発展途上のベンチャーです。<br>
+                                    目指したい場所も成し遂げたいことも、まだまだ遠く先にあります。<br>
+                                    あなたの力で、もっと効率的に、もっと速く前に進めるかもしれません。<br>
+                                    IT業界を支える事業を生み出し、価値ある企業を一緒に創ってみませんか？
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Anselの特徴 -->
+            <section class="recruit-feature">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Feature</h2>
+                            <h3>Anselの特徴</h3>
+                        </div>
+                        <div class="r-feature-container">
+                            <div class="r-feature-content">
+                                <div class="r-feature-ttl">
+                                    <p class="number">1</p>
+                                    <h4>透明性</h4>
+                                </div>
+                                <p>
+                                    我々は、働きやすい環境を目指して透明性を重視しています。案件の単価と連動する給与設計をしており、給与テーブルも公開しています。また、会社の決算状況なども公開し、透明性の高い健全な経営を行っています。
+                                </p>
+                            </div>
+                            <div class="r-feature-content">
+                                <div class="r-feature-ttl">
+                                    <p class="number">2</p>
+                                    <h4>案件単価性</h4>
+                                </div>
+                                <p>
+                                    Anselでは、スクール生とエンジニアの2つの職位があり、スクール生は一律報酬、エンジニアは、案件単価とインセンティブによって報酬設計を行っています。インセンティブは主に後輩育成・マネジメントを行うメンバーに支給しており、技術力が高く、かつチームを大事に働ける人材に報いる制度となっています。
+                                </p>
+                            </div>
+                            <div class="r-feature-content">
+                                <div class="r-feature-ttl">
+                                    <p class="number">3</p>
+                                    <h4>成長環境</h4>
+                                </div>
+                                <p>
+                                    Anselでは社員の成長を支援することを大切にしています。未経験から入社したメンバーには最低8ヶ月からのボリューミーなプログラミングカリキュラムを用意しておりますので、しっかりと技術を身につけられます。現役エンジニアにも、自分の専門外のスキル・言語を、講師付きで学べる環境を用意しています。現状に不安があるエンジニアへ、働きながら成長できる機会をAnselでは提供しています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 報酬体系 -->
+            <section class="reward">
+                <div class="reward-wrapper">
+                    <h2>Ansel Technologiesの報酬体系</h2>
+                    <h3>単価評価制度 × インセンティブ制度</h3>
+                </div>
+            </section>
+
+            <!-- 単価評価制度 -->
+            <section class="evaluation">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Evaluation</h2>
+                            <h3>単価評価制度</h3>
+                            <p>
+                                Ansel Technologiesでは、お客様からいただく単価をエンジニアへ開示し、その単価の73%を還元します。
+                            </p>
+                        </div>
+                        <div class="evaluation-container">
+                            <div class="evaluation-content">
+                                <h4>評価基準</h4>
+                                <p>
+                                    評価基準は「粗利率」になります。<br>
+                                    粗利率=1-((給与＋社会保険料(会社負担分)＋交通費)÷単価)
+                                </p>
+                            </div>
+                            <div class="evaluation-content">
+                                <h4>単価の還元方法</h4>
+                                <p>
+                                    月給は1年間の評価期間中は固定とし、賞与によって還元率が73%となるように調整いたします。<br>
+                                    賞与額=(年間平均単価×(年間平均粗利率ー27%)×その期の稼働月数)
+                                </p>
+                            </div>
+                            <div class="evaluation-content">
+                                <h4>昇給</h4>
+                                <p>
+                                    期間中に単価が大きく上がった場合、固定の月額報酬をUPいたします。<br>
+                                    昇給も粗利率を基に算出いたします。<br>
+                                    昇給額＝(年間平均単価×(年間平均粗利率-37%))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="evaluation-group">
+                            <h5>例）1年間の平均単価が65万のエンジニアAさんの場合</h5>
+                            <div class="evaluation-list-one">
+                                <div class="evaluation-item btm-border">
+                                    <p>単価</p>
+                                    <p>¥650,000<span>/月</span></p>
+                                </div>
+                                <div class="evaluation-item">
+                                    <p>月給</p>
+                                    <p>¥342,032<span>/月</span></p>
+                                </div>
+                                <div class="evaluation-item">
+                                    <p>社会保険料<span>会社負担分</span></p>
+                                    <p>¥52,468<span>/月</span></p>
+                                </div>
+                                <div class="evaluation-item">
+                                    <p>交通費</p>
+                                    <p>¥15,000<span>/月</span></p>
+                                </div>
+                            </div>
+                            <div class="evaluation-list-second">
+                                <div class="evaluation-item">
+                                    <p>賞与</p>
+                                    <p>¥676,261<span>/月</span></p>
+                                </div>
+                                <div class="evaluation-item">
+                                    <p>賞与社保<span>(会社負担分)</span></p>
+                                    <p>¥103,739<span>/月</span></p>
+                                </div>
+                                <div class="evaluation-item total">
+                                    <p>還元額</p>
+                                    <p>¥5,694,000<span>/年</span></p>
+                                </div>
+                                <p>(還元率　¥5,964,000 ÷　7,800,000 = 73%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 想定給与表 -->
+            <section class="payroll">
+                <div class="wrapper">
+                    <div class="inner">
+                        <table class="payroll-table">
+                            <tr class="payroll-table-list">
+                                <th class="unit">単価</th>
+                                <th class="refund">還元率</th>
+                                <th class="refund-year">還元率/年</th>
+                                <th class="refund-month">還元率/月</th>
+                                <th class="salary-month">給与/月</th>
+                                <th class="socia-insurance">社会保険料<br><span>(会社負担分)</span></th>
+                                <th class="transportation">交通費</th>
+                                <th class="bonus">賞与支給額</th>
+                                <th class="bonus-social">賞与社保</th>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">450,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">3,942,000</td>
+                                <td class="refund-month-item">303,750</td>
+                                <td>250,347</td>
+                                <td>38,403</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">257,500</td>
+                                <td class="bonus-social-item">39,500</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">500,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">4,380,000</td>
+                                <td class="refund-month-item">315,000</td>
+                                <td>260,101</td>
+                                <td>39,899</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">520,201</td>
+                                <td class="bonus-social-item">79,799</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">550,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">4,818,000</td>
+                                <td class="refund-month-item">346,500</td>
+                                <td>287,411</td>
+                                <td>44,089</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">572,221</td>
+                                <td class="bonus-social-item">87,779</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">600,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">5,256,000</td>
+                                <td class="refund-month-item">378,000</td>
+                                <td>314,722</td>
+                                <td>48,278</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">624,241</td>
+                                <td class="bonus-social-item">95,759</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">650,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">5,694,000</td>
+                                <td class="refund-month-item">409,500</td>
+                                <td>342,032</td>
+                                <td>52,468</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">676,261</td>
+                                <td class="bonus-social-item">103,739</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">700,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">6,132,000</td>
+                                <td class="refund-month-item">441,000</td>
+                                <td>369,343</td>
+                                <td>56,657</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">728,282</td>
+                                <td class="bonus-social-item">111,718</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">750,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">6,570,000</td>
+                                <td class="refund-month-item">472,500</td>
+                                <td>396,653</td>
+                                <td>60,847</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">780,302</td>
+                                <td class="bonus-social-item">119,698</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">800,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">7,008,000</td>
+                                <td class="refund-month-item">504,000</td>
+                                <td>423,964</td>
+                                <td>65,036</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">832,322</td>
+                                <td class="bonus-social-item">127,678</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">850,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">7,446,000</td>
+                                <td class="refund-month-item">535,500</td>
+                                <td>451,274</td>
+                                <td>69,226</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">884,342</td>
+                                <td class="bonus-social-item">135,658</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">900,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">7,884,000</td>
+                                <td class="refund-month-item">567,000</td>
+                                <td>478,585</td>
+                                <td>73,415</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">936,362</td>
+                                <td class="bonus-social-item">143,638</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">950,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">8,322,000</td>
+                                <td class="refund-month-item">598,500</td>
+                                <td>505,896</td>
+                                <td>77,604</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">988,382</td>
+                                <td class="bonus-social-item">151,618</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">1,000,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">8,760,000</td>
+                                <td class="refund-month-item">630,000</td>
+                                <td>533,206</td>
+                                <td>81,794</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">1,040,402</td>
+                                <td class="bonus-social-item">159,598</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">1,050,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">9,198,000</td>
+                                <td class="refund-month-item">661,500</td>
+                                <td>560,517</td>
+                                <td>85,983</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">1,092,422</td>
+                                <td class="bonus-social-item">167,578</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">1,110,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">9,636,000</td>
+                                <td class="refund-month-item">693,000</td>
+                                <td>587,827</td>
+                                <td>90,173</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">1,144,443</td>
+                                <td class="bonus-social-item">175,557</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">1,150,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">10,074,000</td>
+                                <td class="refund-month-item">724,500</td>
+                                <td>615,138</td>
+                                <td>94,362</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">1,196,463</td>
+                                <td class="bonus-social-item">183,537</td>
+                            </tr>
+                            <tr>
+                                <td class="unit-item">1,200,000</td>
+                                <td class="refund-item">73%</td>
+                                <td class="refund-year-item">10,512,000</td>
+                                <td class="refund-month-item">756,000</td>
+                                <td>642,448</td>
+                                <td>98,552</td>
+                                <td>15,000</td>
+                                <td class="bonus-item">1,248,483</td>
+                                <td class="bonus-social-item">191,517</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- インセンティブ制度 -->
+            <section class="incentive">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Incentive</h2>
+                            <h3>インセンティブ制度</h3>
+                            <p>
+                                Ansel  Technologiesは、より会社に貢献してくださったエンジニアにインセンティブとして還元いたします。
+                            </p>
+                        </div>
+                        <div class="incentive-container">
+                            <div class="incentive-nurturing">
+                                <div class="incentive-ttl">
+                                    <h4>育成インセンティブ</h4>
+                                    <p>
+                                        Ansel  Technologiesは、より会社に貢献してくださったエンジニアにインセンティブとして還元いたします。
+                                        Backlogを用いたオンラインの育成カリキュラムの講師として1名担当する毎に7,000円、最大15名程度ご担当することも可能です。
+                                    </p>
+                                </div>
+                                <table class="nurturing-table">
+                                    <tr class="nurturing-list">
+                                        <th>担当人数</th>
+                                        <th>インセンティブ/年</th>
+                                        <th>インセンティブ/月</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1名</td>
+                                        <td>84,000</td>
+                                        <td>7,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3名</td>
+                                        <td>252,000</td>
+                                        <td>21,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5名</td>
+                                        <td>420,000</td>
+                                        <td>35,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10名</td>
+                                        <td>840,000</td>
+                                        <td>70,000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="incentive-introduction">
+                                <div class="incentive-ttl">
+                                    <h4>紹介インセンティブ</h4>
+                                    <p>
+                                        ご友人などを紹介していただき入社となった場合、紹介インセンティブをお支払いいたします。累計の紹介人数に応じて単価が変わるので、ぜひ積極的にご紹介ください。
+                                    </p>
+                                </div>
+                                <table class="introduction-table">
+                                    <tr class="introduction-list">
+                                        <th>累計紹介人数</th>
+                                        <th>金額/1名あたり</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1名〜2名</td>
+                                        <td>100,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3名</td>
+                                        <td>150,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5名</td>
+                                        <td>200,000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="incentive-certification">
+                                <div class="incentive-ttl">
+                                    <h4>資格インセンティブ</h4>
+                                    <p>
+                                        弊社は未経験者だけでなく、現役のエンジニアの育成にも力を入れています。 自己学習をして資格を取得した場合、資格内容により月額インセンティブと、合格報奨金を支給いたします。 記載のない資格も取得する場合にはご相談ください。
+                                    </p>
+                                </div>
+                                <table class="certification-table">
+                                    <tr class="certification-list">
+                                        <th>実施期間</th>
+                                        <th>資格名</th>
+                                        <th>月額奨励金</th>
+                                        <th>合格奨励金</th>
+                                        <th>受験費用</th>
+                                    </tr>
+                                    <tr>
+                                        <td>IPA情報処理推進機構</td>
+                                        <td>基本情報技術者</td>
+                                        <td></td>
+                                        <td>5,000</td>
+                                        <td>7,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>応用情報技術者</td>
+                                        <td></td>
+                                        <td>10,000</td>
+                                        <td>7,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>ITストラテジスト</td>
+                                        <td>30,000</td>
+                                        <td>120,000</td>
+                                        <td>5,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>システムアーキテクト</td>
+                                        <td>20,000</td>
+                                        <td>120,000</td>
+                                        <td>5,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>プロジェクトマネージャー</td>
+                                        <td>20,000</td>
+                                        <td>120,000</td>
+                                        <td>5,700</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Oracle</td>
+                                        <td>Oracle Certified Java Programmer, silver</td>
+                                        <td>5,000</td>
+                                        <td>30,000</td>
+                                        <td>32,340</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Oracle Certified Java Programmer, gold</td>
+                                        <td>10,000</td>
+                                        <td>100,000</td>
+                                        <td>32,340</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LPI-inc</td>
+                                        <td>LPIC-1 101</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>LPIC-1 102</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>LPIC-2 201</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>LPIC-2 202</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>LPIC-3 300</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>LPIC-3 303</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>LPIC-3 304</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$141,22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cisco</td>
+                                        <td>CCNA8種 CCDA共通</td>
+                                        <td>¥5,000</td>
+                                        <td>¥10,000</td>
+                                        <td>¥39,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>ICND1</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥19,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>ICNS2</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥19,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>CCNP7種 CCDP共通</td>
+                                        <td>¥5,000</td>
+                                        <td>¥10,000</td>
+                                        <td>¥36,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Microsoft</td>
+                                        <td>Azure Fundamentals(AZ-900)</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥12,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Google</td>
+                                        <td>Google Cloud Certified Associate Cloud Engineer</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>$125</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Google Cloud Certified Professional Cloud Architect</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>$200</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Google Cloud Certified Associate Cloud Developer</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>$200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AWS</td>
+                                        <td>AWS Certified Cloud Practitioner</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥11,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Associate Solution Architect</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified SisOps Administrator</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Associate Developer</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥15,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Professional Solution Architect</td>
+                                        <td>¥10,000</td>
+                                        <td>¥50,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Professional DevOps Engineer</td>
+                                        <td>¥10,000</td>
+                                        <td>¥50,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Specialty Advanced Networking</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Specialty Security</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Specialty Machine Lerning</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Specialty Data Analytics</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>AWS Certified Specialty Database</td>
+                                        <td></td>
+                                        <td>¥20,000</td>
+                                        <td>¥30,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PMI</td>
+                                        <td>PMP(Project Management Professional)</td>
+                                        <td>¥20,000</td>
+                                        <td>¥100,000</td>
+                                        <td>$405</td>
+                                    </tr>
+                                    <tr>
+                                        <td>JSTQB</td>
+                                        <td>JSTQB認定テスト技術者 Foundation Level</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>JSTQB認定テスト技術者 Advanced Level</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Salesforce</td>
+                                        <td>Salesforce認定 アドミニストレーター</td>
+                                        <td></td>
+                                        <td>¥5,000</td>
+                                        <td>¥20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Salesforce認定 上級アドミニストレーター</td>
+                                        <td>¥5,000</td>
+                                        <td>¥30,000</td>
+                                        <td>¥20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Salesforce認定 Service Cloudコンサルタント</td>
+                                        <td>¥10,000</td>
+                                        <td>¥30,000</td>
+                                        <td>¥20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>Salesforce認定 Platform アプリケーションビルダー</td>
+                                        <td>¥10,000</td>
+                                        <td>¥30,000</td>
+                                        <td>¥20,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Servicenow</td>
+                                        <td>CSA</td>
+                                        <td></td>
+                                        <td>¥10,000</td>
+                                        <td>¥12,000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer-inner">
+                        <a href="" class="entry-btn">
+                            <p>採用エントリー</p>
+                            <img src="images/arrow-entry.svg" alt="">
+                        </a>
+                        <div class="footer-container">
+                            <div class="footer-content">
+                                <h2>株式会社ANSEL TECHNOLOGIES</h2>
+                                <div class="footer-company">
+                                    <p>
+                                        東京本社<br>
+                                        〒101-0051 東京都千代田区神田神保町2丁目38-11岩田ビル1F
+                                    </p>
+                                    <p>
+                                        大阪支社<br>
+                                        〒556-0011 大阪府大阪市浪速区難波中2丁目10-70 パークスタワー19F
+                                    </p>
+                                    <p>
+                                        札幌支社<br>
+                                        〒060-0004 北海道札幌市中央区北4条西4丁目1-7 MMS札幌駅前ビル1階
+                                    </p>
+                                    <p>
+                                        福岡支社<br>
+                                        〒810-0001 福岡県福岡市中央区天神1-4-1 西日本新聞会館16階 (天神スカイホール内)                                    </p>
+                                </div>
+                                <div class="footer-sns">
+                                    <a href="">
+                                        <img src="images/instagram_logo.png" alt="Instagram">
+                                        <p>Instagram</p>
+                                    </a>
+                                    <a href="">
+                                        <img src="images/wantedly_logo.png" alt="Wantedly">
+                                        <p>Wantedly</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav-list-left">
+                                    <li class="footer-nav-item">
+                                        <a href="">ホーム</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <a href="">会社概要</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>事業内容</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- エンジニアスクール</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- カウンセリング申込</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list-right">
+                                    <li class="footer-nav-item">
+                                        <button>採用情報</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- 採用情報トップ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- IT経験者</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- スクール生採用</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>お知らせ</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- お知らせ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- ブログ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <p class="copyright">©︎ Ansel Techonologies, inc. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="./js/main.js"></script>
+</body>
+</html>

@@ -1756,6 +1756,247 @@ textarea {
 
 
 
+/* -----------------------------------------
+採用情報トップ
+----------------------------------------- */
+
+/* -----------------------------------------メッセージ */
+.message-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-group {
+    width: 52%;
+
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+/* -----------------------------------------Anselの特徴 */
+.r-feature-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.r-feature-content {
+    width: 32%;
+}
+
+.r-feature-ttl {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    p {
+        color: var(--blue);
+        font-size: 21px;
+        font-family: var(--font-yumincho);
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--blue);
+        display: grid;
+        place-content: center;
+    }
+
+    h4 {
+        color: var(--blue);
+        font-size: 30px;
+        font-weight: normal;
+    }
+}
+
+
+
+/* -----------------------------------------報酬体系 */
+.reward-wrapper {
+    background: linear-gradient(90deg, #5081CE 0%, #1B3866 100%);
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 50px 0;
+
+    h2 {
+        color: var(--white);
+        font-size: 56px;
+        font-weight: normal;
+        letter-spacing: 0.02em;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        width: fit-content;
+        margin: 0 auto;
+        font-size: 24px;
+        font-family: var(--font-hiragino);
+        background-color: var(--white);
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+}
+
+
+
+/* -----------------------------------------単価評価制度 */
+.evaluation-container {
+    background-color: #EEE;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.evaluation-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--blue);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h4 {
+        color: var(--blue);
+        font-size: 30px;
+        font-weight: normal;
+        width: 25%;
+    }
+}
+
+.evaluation-group {
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    border: 1px solid var(--blue);
+
+    h5 {
+        color: var(--blue);
+        font-family: var(--font-hiragino);
+        background-color: #EEE;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        text-align: center;
+        initial-letter: 0.05em;
+    }
+}
+
+.evaluation-list-one,
+.evaluation-list-second {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.evaluation-list-one {
+    margin-bottom: 50px;
+}
+
+.evaluation-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    color: var(--light-brack);
+}
+
+.btm-border {
+    border-bottom: 2px solid var(--brack);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.total {
+    border-top: 2px solid var(--brack);
+    padding-top: 10px;
+    color: var(--red);
+    font-weight: bold;
+}
+
+.evaluation-list-second > p {
+    font-size: 12px;
+}
+
+
+
+/* -----------------------------------------想定給与表 */
+.payroll-table {
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+
+    th {
+        color: var(--white);
+    }
+
+    /*
+    単価・賞与支給額・賞与社保
+    */
+    .unit,
+    .bonus,
+    .bonus-social {
+        background-color: var(--orange);
+    }
+    .unit-item,
+    .bonus-item,
+    .bonus-social-item {
+        background-color: #FFE8CD;
+    }
+
+    /* 還元率 */
+    .refund {
+        background-color: var(--light-brack);
+    }
+    .refund-item {
+        background-color: #EAEAEA;
+    }
+
+    /* 還元率/年 */
+    .refund-year {
+        background-color: var(--blue);
+    }
+    .refund-year-item {
+        color: var(--blue);
+        font-weight: bold;
+        background-color: #C9E2FF;
+    }
+
+    /* 還元率/月 */
+    .refund-month {
+        background-color: #3C8CE9;
+    }
+    .refund-month-item {
+        background-color: #E1EFFF;
+    }
+
+    /*
+    還元率/月・社会保険料・交通費
+    */
+    .salary-month,
+    .socia-insurance,
+    .transportation {
+        background-color: #76A7E0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
