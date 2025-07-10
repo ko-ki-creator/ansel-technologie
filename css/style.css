@@ -1621,6 +1621,144 @@ table {
 
 
 
+/* -----------------------------------------
+カウンセリング申込フォーム
+----------------------------------------- */
+
+.form-heading {
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    h2 {
+        font-size: 30px;
+        font-family: var(--font-hiragino);
+        margin-bottom: 20px;
+        letter-spacing: 0.05em;
+    }
+
+    p {
+        letter-spacing: 0.05em;
+    }
+}
+
+.form-container {
+
+}
+
+.form-content {
+    display: flex;
+    margin-bottom: 50px;
+
+    p {
+        width: 20%;
+        padding-top: 7px;
+        letter-spacing: 0.05em;
+
+        &::after {
+            content: '【必須】';
+            color: #DF4242;
+
+        }
+    }
+
+    label {
+        width: 80%;
+    }
+}
+
+.form-text,
+.other {
+    background-color: #F0F0F0;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    padding: 10px;
+
+    &::placeholder {
+        color: #ABABAB;
+        font-family: var(--font-hiragino);
+    }
+}
+
+.form-text {
+    width: 30%;
+}
+
+.other {
+    width: 100%;
+}
+
+.check-item {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--font-hiragino);
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #616161;
+    border-radius: 5px;
+    margin-right: 20px;
+    vertical-align: -12px;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+}
+
+input[type="checkbox"]:checked:before {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    transform: rotate(50deg);
+    width: 10px;
+    height: 20px;
+    border-right: 3px solid var(--blue);
+    border-bottom: 3px solid var(--blue);
+    content: '';
+}
+
+textarea {
+    background-color: #F0F0F0;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    min-width: 80%;
+    min-height: 350px;
+    padding: 10px 0 0 10px;
+
+    &::placeholder {
+        color: #ABABAB;
+        font-family: var(--font-hiragino);
+    }
+}
+
+.submit-btn {
+    width: 244px;
+    height: 48px;
+    margin: 0 auto;
+
+    button {
+        color: var(--white);
+        font-weight: bold;
+        font-family: var(--font-hiragino);
+        background: linear-gradient(66deg, #4C77BC 0%, #2E599E 100%);
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        transition-duration: .5s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -2286,6 +2424,50 @@ SP
         p {
             font-size: 18px;
         }
+    }
+
+
+
+
+
+
+    /* -----------------------------------------
+    カウンセリング申込フォーム
+    ----------------------------------------- */
+
+    .form-heading {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 21px;
+        }
+    }
+
+    .form-content {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        p {
+            width: 100%;
+            padding-top: 0;
+            margin-bottom: 10px;
+        }
+
+        label {
+            width: 100%;
+        }
+    }
+
+    .form-text {
+        width: 100%;
+    }
+
+    .check-item {
+        margin-bottom: 10px;
+    }
+
+    .submit-btn {
+        margin-top: 40px;
     }
 
 
