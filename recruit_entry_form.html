@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF | カウンセリング申込フォーム | Ansel Technologies</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <!-- ヘッダー -->
+            <section class="header">
+                <div class="header-wrapper">
+                    <div class="header-inner">
+                        <div class="header-group">
+                            <a href="#" class="header-logo">
+                                <img src="images/ansel-logo.png" alt="アンセルテクノロジーロゴ">
+                            </a>
+                            <div class="header-nav">
+                                <nav class="nav">
+                                    <ul class="nav-list">
+                                        <li class="nav-item">
+                                            <a href="company.html">
+                                                <p class="ja">会社概要</p>
+                                                <p class="en">COMPANY</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">事業内容</p>
+                                                <p class="en">SERVICE</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="service.html">事業内容トップ</a></li>
+                                                <li class="dropDown_item"><a href="service_education.html">エンジニアスクール</a></li>
+                                                <li class="dropDown_item"><a href="service_counseling.html">カウンセリング申込</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">採用情報</p>
+                                                <p class="en">RECRUIT</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="recruit.html">採用情報トップ</a></li>
+                                                <li class="dropDown_item"><a href="recruit_experienced.html">IT経験者採用</a></li>
+                                                <li class="dropDown_item"><a href="recruit_school.html">スクール生採用</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">お知らせ</p>
+                                                <p class="en">NEWS</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="news.html">お知らせ</a></li>
+                                                <li class="dropDown_item"><a href="blog.html">ブログ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="" class="header-contact-btn">
+                                    <img src="images/mail-icon.png" alt="お問い合わせアイコン">
+                                    <p>CONTACT</p>
+                                </a>
+                                <button class="hamburger" id="js-hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <p class="menu-open">menu</p>
+                                    <p class="menu-close">close</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item-sp">
+                                <a href="#">
+                                    <p class="ja">ホーム</p>
+                                    <p class="en">HOME</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <a href="company.html">
+                                    <p class="ja">会社情報</p>
+                                    <p class="en">COMPANY</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">事業内容</p>
+                                    <p class="en">SERVICE</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="service.html">- 事業内容トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_education.html">- エンジニアスクール</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_counseling.html">- カウンセリング申込</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">採用情報</p>
+                                    <p class="en">RECRUIT</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="recruit.html">- 採用情報トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_experienced.html">- IT経験者</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_school.html">- スクール生採用</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">お知らせ</p>
+                                    <p class="en">NEWS</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="news.html">- お知らせ</a></li>
+                                    <li class="dropDown_item_sp"><a href="blog.html">- ブログ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header-contact-btn-sp">
+                        <img src="images/mail-icon.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <!-- --------------------
+        カウンセリング申込フォーム
+        -------------------- -->
+
+        <main>
+            <section class="form">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="form-heading">
+                            <h2>カウンセリング申込フォーム</h2>
+                            <p>
+                                Ansel Tech Academyの面談を希望される方は、こちらからフォーム送信をお願いします。<br>
+                                記載いただいたメールアドレスにご返信いたします。
+                            </p>
+                        </div>
+                        <form>
+                            <div class="form-container">
+                                <div class="form-content">
+                                    <p class="requied">お名前</p>
+                                    <label for="name" class="name">
+                                        <input type="text" name="name" class="form-text" placeholder="山田 太郎" required>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <p class="requied">メールアドレス</p>
+                                    <label for="email" class="email">
+                                        <input type="text" name="email" class="form-text" placeholder="yamada.taro@mail.com" required>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <p class="requied">電話番号</p>
+                                    <label for="tel" class="tel">
+                                        <input type="text" name="tel" class="form-text" placeholder="123-456-7890" required>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <p class="requied">ご希望内容</p>
+                                    <label for="hope" class="hope">
+                                        <label class="check-item"><input type="checkbox" name="hope" value="カリキュラムを受講したい">カリキュラムを受講したい</label>
+                                        <label class="check-item"><input type="checkbox" name="hope" value="まずは面談して決めたい">まずは面談して決めたい</label>
+                                        <label class="check-item"><input type="checkbox" name="hope" value="自社の社員にカリキュラムを提供したい">自社の社員にカリキュラムを提供したい</label>
+                                        <label class="check-item"><input type="checkbox" name="hope" value="その他">その他</label>
+                                        <input type="text" name="other" class="form-text other" placeholder="入力してください">
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <p class="requied">お問い合わせ内容</p>
+                                    <textarea name="textarea" placeholder="入力してください"></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="submit">送信する</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer-inner">
+                        <a href="" class="entry-btn">
+                            <p>採用エントリー</p>
+                            <img src="images/arrow-entry.svg" alt="">
+                        </a>
+                        <div class="footer-container">
+                            <div class="footer-content">
+                                <h2>株式会社ANSEL TECHNOLOGIES</h2>
+                                <div class="footer-company">
+                                    <p>
+                                        東京本社<br>
+                                        〒101-0051 東京都千代田区神田神保町2丁目38-11岩田ビル1F
+                                    </p>
+                                    <p>
+                                        大阪支社<br>
+                                        〒556-0011 大阪府大阪市浪速区難波中2丁目10-70 パークスタワー19F
+                                    </p>
+                                    <p>
+                                        札幌支社<br>
+                                        〒060-0004 北海道札幌市中央区北4条西4丁目1-7 MMS札幌駅前ビル1階
+                                    </p>
+                                    <p>
+                                        福岡支社<br>
+                                        〒810-0001 福岡県福岡市中央区天神1-4-1 西日本新聞会館16階 (天神スカイホール内)                                    </p>
+                                </div>
+                                <div class="footer-sns">
+                                    <a href="">
+                                        <img src="images/instagram_logo.png" alt="Instagram">
+                                        <p>Instagram</p>
+                                    </a>
+                                    <a href="">
+                                        <img src="images/wantedly_logo.png" alt="Wantedly">
+                                        <p>Wantedly</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav-list-left">
+                                    <li class="footer-nav-item">
+                                        <a href="">ホーム</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <a href="">会社概要</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>事業内容</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- エンジニアスクール</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- カウンセリング申込</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list-right">
+                                    <li class="footer-nav-item">
+                                        <button>採用情報</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- 採用情報トップ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- IT経験者</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- スクール生採用</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>お知らせ</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- お知らせ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- ブログ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <p class="copyright">©︎ Ansel Techonologies, inc. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="./js/main.js"></script>
+</body>
+</html>

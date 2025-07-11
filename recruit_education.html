@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF | スクール生採用 | Ansel Technologies</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <!-- ヘッダー -->
+            <section class="header">
+                <div class="header-wrapper">
+                    <div class="header-inner">
+                        <div class="header-group">
+                            <a href="#" class="header-logo">
+                                <img src="images/ansel-logo.png" alt="アンセルテクノロジーロゴ">
+                            </a>
+                            <div class="header-nav">
+                                <nav class="nav">
+                                    <ul class="nav-list">
+                                        <li class="nav-item">
+                                            <a href="company.html">
+                                                <p class="ja">会社概要</p>
+                                                <p class="en">COMPANY</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">事業内容</p>
+                                                <p class="en">SERVICE</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="service.html">事業内容トップ</a></li>
+                                                <li class="dropDown_item"><a href="service_education.html">エンジニアスクール</a></li>
+                                                <li class="dropDown_item"><a href="service_counseling.html">カウンセリング申込</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">採用情報</p>
+                                                <p class="en">RECRUIT</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="recruit.html">採用情報トップ</a></li>
+                                                <li class="dropDown_item"><a href="recruit_experienced.html">IT経験者採用</a></li>
+                                                <li class="dropDown_item"><a href="recruit_school.html">スクール生採用</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a>
+                                                <p class="ja">お知らせ</p>
+                                                <p class="en">NEWS</p>
+                                            </a>
+                                            <ul class="dropDown_list">
+                                                <li class="dropDown_item"><a href="news.html">お知らせ</a></li>
+                                                <li class="dropDown_item"><a href="blog.html">ブログ</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="" class="header-contact-btn">
+                                    <img src="images/mail-icon.png" alt="お問い合わせアイコン">
+                                    <p>CONTACT</p>
+                                </a>
+                                <button class="hamburger" id="js-hamburger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <p class="menu-open">menu</p>
+                                    <p class="menu-close">close</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ナビゲーション -->
+            <section class="navigation">
+                <div class="navigation-container" id="js-nav">
+                    <nav class="nav-sp">
+                        <ul class="nav-list-sp">
+                            <li class="nav-item-sp">
+                                <a href="#">
+                                    <p class="ja">ホーム</p>
+                                    <p class="en">HOME</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <a href="company.html">
+                                    <p class="ja">会社情報</p>
+                                    <p class="en">COMPANY</p>
+                                </a>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">事業内容</p>
+                                    <p class="en">SERVICE</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="service.html">- 事業内容トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_education.html">- エンジニアスクール</a></li>
+                                    <li class="dropDown_item_sp"><a href="service_counseling.html">- カウンセリング申込</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">採用情報</p>
+                                    <p class="en">RECRUIT</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="recruit.html">- 採用情報トップ</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_experienced.html">- IT経験者</a></li>
+                                    <li class="dropDown_item_sp"><a href="recruit_school.html">- スクール生採用</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item-sp">
+                                <button class="nav-item">
+                                    <p class="ja">お知らせ</p>
+                                    <p class="en">NEWS</p>
+                                </button>
+                                <ul class="dropDown_list_sp">
+                                    <li class="dropDown_item_sp"><a href="news.html">- お知らせ</a></li>
+                                    <li class="dropDown_item_sp"><a href="blog.html">- ブログ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="" class="header-contact-btn-sp">
+                        <img src="images/mail-icon.png" alt="">
+                        <p>CONTACT</p>
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <!-- --------------------
+        スクール生採用
+        -------------------- -->
+
+        <main>
+            <!-- ページビジュアル -->
+            <section class="page-visual">
+                <div class="page-wrapper">
+                    <div class="page-inner">
+                        <div class="page-back">
+                            <img class="page-visual-logo" src="images/page-visual-logo.png" alt="アンセルロゴ">
+                            <img class="page-img" src="images/job-enginier-back.png" alt="採用情報">
+                        </div>
+                        <h2>IT経験者採用</h2>
+                        <h3>JOB</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 経験者エンジニア -->
+            <section class="inexperienced">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Experienced</h2>
+                            <h3>経験者エンジニア</h3>
+                            <p>
+                                Softwere Engineer / Infrastructure Engineer<br>
+                                バックエンド・フロントエンド・インフラエンジニア
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 事業内容 -->
+            <section class="p-service">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Service</h2>
+                            <h3>事業内容</h3>
+                        </div>
+                        <div class="p-service-container">
+                            <div class="p-service-content">
+                                <img src="images/service-solution1.png" alt="ITソリューション事業">
+                                <div class="p-service-group">
+                                    <h4 class="job-school-ttl">ITソリューション事業</h4>
+                                    <h5 class="job-school-sub">各種業界のクライアント企業様へITサービスの提供</h5>
+                                    <p>
+                                        社員ひとりひとりの「どんなことをやっていきたいか」に合わせて、 フロントエンド・バックエンド・インフラエンジニア等、様々な案件のプロジェクトメンバーとして業務を実施します。 「専門分野の技術を追求したい」「PM・PMOなどのマネジメント領域で活躍したい」など、将来のキャリアビジョンに合わせて自由に案件を決めることが可能です。 さらに、年1回の更新時期にシステム上で現在の案件を継続するか、別の案件に挑戦するかも選択可能です。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-service-content p-service-education">
+                                <div class="p-service-group">
+                                    <h4 class="job-school-ttl">新規事業開発</h4>
+                                    <h5 class="job-school-sub">SaaS、AIなど幅広いWebサービスの開発</h5>
+                                    <p>
+                                        有志で集まってチームを組成し新規事業開発に取り組んでいるメンバーも複数おり、 可能性があれば事業化や会社としての投資も検討可能です。 現在、Insurance×Technology、ChatGPTを用いたセキュリティリスクマネジメントサービス開発、IT派遣領域業務支援システム開発などの複数PJが走っています。
+                                    </p>
+                                </div>
+                                <img src="images/service-solution2.png" alt="エンジニア教育事業">
+                            </div>
+                            <div class="p-service-content">
+                                <img src="images/service-solution3.png" alt="自社開発サービス">
+                                <div class="p-service-group">
+                                    <h4 class="job-school-ttl">Web制作・運用</h4>
+                                    <h5 class="job-school-sub">大手企業様のHP制作、ECサイトの構築運用</h5>
+                                    <p>
+                                        小規模から大規模まで幅広く対応が可能です
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="work-summary">
+                            <tr class="summary-list">
+                                <th>勤務地</th>
+                                <td>本社：神保町　配属：リモート or 東京23区 or 本社（プロジェクトにより変動）</td>
+                            </tr>
+                            <tr class="summary-list">
+                                <th>勤務時間</th>
+                                <td>10:00〜18:00</td>
+                            </tr>
+                            <tr class="summary-list">
+                                <th>福利厚生</th>
+                                <td>健康保険・厚生年金保険・雇用保険・労災保険・介護保険・子ども・子育て拠出金</td>
+                            </tr>
+                            <tr class="summary-list">
+                                <th>休日休暇</th>
+                                <td>基本 完全週休2日制（プロジェクトにより変動）</td>
+                            </tr>
+                            <tr class="summary-list">
+                                <th>応募方法</th>
+                                <td>下記の応募フォームよりエントリーをお願いします。採用担当よりご連絡致します。</td>
+                            </tr>
+                            <tr class="summary-list">
+                                <th>求めるスキル</th>
+                                <td>
+                                    <p>・ITエンジニア経験（1年以上）をお持ちの方</p>
+                                    <p>・開発言語問わず</p>
+                                    <p>・バックエンド、フロントエンド、インフラ問わず</p>
+                                    <p>・要件定義、設計、開発、運用、テストまで工程問わず</p>
+                                </td>
+                            </tr>
+                            <tr class="summary-list">
+                                <th>歓迎スキル</th>
+                                <td>
+                                    <p>・マネジメント、リーダー業務、教育のご経験をお持ちの方</p>
+                                    <p>・上流工程のご経験をお持ちの方</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- エントリーの流れ -->
+            <section class="flow">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="p-heading">
+                            <h2>Flow</h2>
+                            <h3>エントリーの流れ</h3>
+                        </div>
+                        <div class="flow-container">
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>1</p>
+                                    <h4>エントリー</h4>
+                                </div>
+                                <p>まずは、当社の採用ページまたは指定の応募フォームからエントリーしてください。履歴書・職務経歴書の提出が必要ですので、事前にご準備をお願いいたします。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>2</p>
+                                    <h4>書類選考</h4>
+                                </div>
+                                <p>ご提出いただいた書類をもとに、これまでのご経験やスキルを確認させていただきます。選考結果は、1週間以内を目安にご連絡いたします。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>3</p>
+                                    <h4>一次面接</h4>
+                                </div>
+                                <p>担当者との面接を行います。これまでのご経験や当社での働き方についてお話ししながら、お互いの理解を深める場となります。リラックスしてお臨みください。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>4</p>
+                                    <h4>最終面接</h4>
+                                </div>
+                                <p>経営陣または部門責任者との面接です。あなたのキャリアビジョンや当社での活躍の可能性について、より具体的にお話しさせていただきます。</p>
+                            </div>
+                            <div class="flow-content">
+                                <div class="flow-ttl">
+                                    <p>5</p>
+                                    <h4>内定</h4>
+                                </div>
+                                <p class="no-border">最終面接を通過された方には、内定のご連絡をいたします。条件面の調整や入社手続きを進め、ご入社に向けた準備をサポートいたします。</p>
+                            </div>
+                            <div class="flow-submit-btn">
+                                <a href="">エントリーする</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="wrapper">
+                    <div class="footer-inner">
+                        <a href="" class="entry-btn">
+                            <p>採用エントリー</p>
+                            <img src="images/arrow-entry.svg" alt="">
+                        </a>
+                        <div class="footer-container">
+                            <div class="footer-content">
+                                <h2>株式会社ANSEL TECHNOLOGIES</h2>
+                                <div class="footer-company">
+                                    <p>
+                                        東京本社<br>
+                                        〒101-0051 東京都千代田区神田神保町2丁目38-11岩田ビル1F
+                                    </p>
+                                    <p>
+                                        大阪支社<br>
+                                        〒556-0011 大阪府大阪市浪速区難波中2丁目10-70 パークスタワー19F
+                                    </p>
+                                    <p>
+                                        札幌支社<br>
+                                        〒060-0004 北海道札幌市中央区北4条西4丁目1-7 MMS札幌駅前ビル1階
+                                    </p>
+                                    <p>
+                                        福岡支社<br>
+                                        〒810-0001 福岡県福岡市中央区天神1-4-1 西日本新聞会館16階 (天神スカイホール内)                                    </p>
+                                </div>
+                                <div class="footer-sns">
+                                    <a href="">
+                                        <img src="images/instagram_logo.png" alt="Instagram">
+                                        <p>Instagram</p>
+                                    </a>
+                                    <a href="">
+                                        <img src="images/wantedly_logo.png" alt="Wantedly">
+                                        <p>Wantedly</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav-list-left">
+                                    <li class="footer-nav-item">
+                                        <a href="">ホーム</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <a href="">会社概要</a>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>事業内容</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- エンジニアスクール</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- カウンセリング申込</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav-list-right">
+                                    <li class="footer-nav-item">
+                                        <button>採用情報</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- 採用情報トップ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- IT経験者</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- スクール生採用</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer-nav-item">
+                                        <button>お知らせ</button>
+                                        <ul class="footer-dropDown-list">
+                                            <li class="footer-dropDown-item"><a href="">- お知らせ</a></li>
+                                            <li class="footer-dropDown-item"><a href="">- ブログ</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <p class="copyright">©︎ Ansel Techonologies, inc. All Right Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script defer src="./js/main.js"></script>
+</body>
+</html>

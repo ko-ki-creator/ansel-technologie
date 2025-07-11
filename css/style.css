@@ -1516,7 +1516,8 @@ table {
         border-left: 1px solid var(--blue);
         margin-left: 25px;
         padding-left: 45px;
-        height: 100px;
+        height: auto;
+        min-height: 100px;
     }
 }
 
@@ -2082,6 +2083,219 @@ textarea {
     padding-left: 15px;
 }
 
+
+
+/* -----------------------------------------
+スクール生採用
+----------------------------------------- */
+
+/* -----------------------------------------未経験エンジニア */
+.inexperienced-ttl {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inexperienced-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inexperienced-content {
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.inexperienced-group {
+    background-color: #C9E2FF;
+    padding: 20px;
+    min-width: 232px;
+    min-height: 122px;
+    letter-spacing: 0.05em;
+
+    p {
+        color: var(--blue);
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        font-family: var(--font-hiragino);
+    }
+}
+
+.study-period {
+    text-align: center;
+    font-family: var(--font-noto);
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+        content: '';
+        height: 3px;
+        flex-grow: 1;
+        background-color: var(--brack);
+    }
+
+    &::before {
+        margin-right: 20px;
+    }
+
+    &::after {
+        margin-left: 20px;
+    }
+}
+
+.inexperienced-reason-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.inexperienced-reason-content {
+    width: 33%;
+
+    h6 {
+        font-size: 16px;
+        font-family: var(--font-hiragino);
+        color: var(--white);
+        background-color: var(--gold);
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+}
+
+.reason-img {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.reason-icon-name {
+    text-align: center;
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+}
+
+
+/* -----------------------------------------事業内容 */
+.job-school-ttl {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+}
+
+.job-school-sub {
+    color: var(--gold);
+    font-size: 21px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.work-summary {
+    margin: 50px 0;
+}
+
+.summary-list {
+    border: 1px solid var(--gold);
+
+    th {
+        color: var(--white);
+        font-weight: normal;
+        background-color: var(--gold);
+        letter-spacing: 0.03em;
+        width: 20%;
+        border: 1px solid #CFC33D;
+    }
+
+    td {
+        text-align: left;
+        padding-left: 30px;
+        letter-spacing: 0.05em;
+        border: 1px solid var(--gold);
+    }
+}
+
+.eligibility-container {
+    width: 65%;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #eee;
+
+    h4 {
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        font-family: var(--font-hiragino);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.eligility-content {
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.eligility-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        color: var(--gold);
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+/* -----------------------------------------エントリーの流れ */
+.flow-submit-btn {
+    width: 244px;
+    height: 48px;
+    margin: 50px auto 0;
+
+    a {
+        color: var(--white);
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #4C77BC 0%, #2E599E 100%);
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: var(--font-hiragino);
+        text-align: center;
+        place-content: center;
+        transition-duration: .4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
 
 
 
@@ -2990,6 +3204,108 @@ SP
     .certification-name {
         text-align: left;
         padding-left: 15px;
+    }
+
+
+
+    /* -----------------------------------------
+    スクール生採用
+    ----------------------------------------- */
+
+    /* -----------------------------------------未経験エンジニア */
+    .inexperienced-ttl {
+        font-size: 21px;
+    }
+
+    .inexperienced-container {
+        flex-direction: column;
+    }
+
+    .inexperienced-content {
+        width: 70%;
+        margin: 0 auto 20px;
+    }
+
+    .inexperienced-reason-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inexperienced-reason-content {
+        width: 100%;
+    }
+
+    .inexperienced-reason-txt {
+        display: none;
+    }
+
+
+    /* -----------------------------------------事業内容 */
+    .job-school-ttl {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .job-school-sub {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .summary-list {
+        display: flex;
+        flex-direction: column;
+
+        th {
+            width: 100%;
+            border: 1px solid var(--gold);
+        }
+
+        td {
+            text-align: center;
+            padding: 15px 30px;
+        }
+    }
+
+    .eligibility-container {
+        width: 100%;
+
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    .eligility-group {
+        margin-bottom: 10px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+    /* -----------------------------------------エントリーの流れ */
+    .flow-submit-btn {
+        width: 244px;
+        height: 48px;
+        margin: 50px auto 0;
+
+        a {
+            color: var(--white);
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #4C77BC 0%, #2E599E 100%);
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: var(--font-hiragino);
+            text-align: center;
+            place-content: center;
+            transition-duration: .4s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 
 
