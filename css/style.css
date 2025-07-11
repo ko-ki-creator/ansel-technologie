@@ -25,6 +25,7 @@ body {
     --font-hiragino: "Hiragino Kaku Gothic Pro", sans-serif;
     --font-italiana: "italiana", serif;
     --font-futura: "Futura", sans-serif;
+    --font-noto: "Noto Sans JP", sans-serif;
 }
 
 button {
@@ -1924,9 +1925,10 @@ textarea {
 
 /* -----------------------------------------想定給与表 */
 .payroll-table {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--font-noto);
     width: 90%;
     margin: 0 auto;
+    overflow-x: scroll;
 
     th {
         color: var(--white);
@@ -1981,6 +1983,107 @@ textarea {
         background-color: #76A7E0;
     }
 }
+
+
+
+/* -----------------------------------------インセンティブ制度 */
+
+/* タイトル */
+.incentive-ttl {
+    width: 80%;
+    margin-bottom: 50px;
+
+    h4 {
+        font-size: 30px;
+        font-weight: normal;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        border-left: 5px solid var(--blue);
+    }
+
+    p {
+        letter-spacing: 0.05em;
+    }
+}
+
+/* 育成インセンティブ・紹介インセンティブ */
+.incentive-nurturing,
+.incentive-introduction {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.nurturing-table,
+.introduction-table,
+.certification-table {
+    font-family: var(--font-noto);
+}
+/* 育成インセンティブ */
+
+.nurturing-list,
+.introduction-list {
+    color: var(--white);
+
+    .charge,
+    .introduce {
+        background-color: var(--light-brack);
+    }
+
+    .incentive-year,
+    .money-people {
+        background-color: var(--blue);
+    }
+
+    .incentive-month {
+        background-color: var(--light-blue);
+    }
+}
+
+.charge-item,
+.introduce-item {
+    background-color: #EAEAEA;
+}
+
+.incentive-year-item {
+    background-color: #E1EFFF;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.incentive-month-item {
+    background-color: #E1EFFF;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.money-people-item {
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* 資格インセンティブ */
+.certification-table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.certification-list {
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+.institution,
+.certification-name {
+    text-align: left;
+    padding-left: 15px;
+}
+
+
+
 
 
 
@@ -2058,6 +2161,10 @@ SP
 
         h3 {
             font-size: 16px;
+        }
+
+        p {
+            text-align: left;
         }
     }
 
@@ -2612,7 +2719,7 @@ SP
         }
     }
 
-    table {
+    .difference-table {
         width: 810px;
         white-space: nowrap;
     }
@@ -2709,6 +2816,180 @@ SP
 
     .submit-btn {
         margin-top: 40px;
+    }
+
+
+
+
+    /* -----------------------------------------
+    採用情報トップ
+    ----------------------------------------- */
+
+    /* -----------------------------------------メッセージ */
+    .message-content {
+        flex-direction: column;
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+
+    .message-group {
+        width: 100%;
+
+        h4 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    /* -----------------------------------------Anselの特徴 */
+    .r-feature-container {
+        flex-direction: column;
+    }
+
+    .r-feature-content {
+        width: 100%;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+
+    /* -----------------------------------------報酬体系 */
+    .reward-wrapper {
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+
+
+    /* -----------------------------------------単価評価制度 */
+    .evaluation-content {
+        flex-direction: column;
+
+        h4 {
+            width: fit-content;
+            margin-bottom: 10px;
+        }
+    }
+
+    .evaluation-group {
+        width: 100%;
+        padding: 20px 15px;
+
+        h5 {
+            text-align: left;
+        }
+    }
+
+    .evaluation-list-one,
+    .evaluation-list-second {
+        width: 100%;
+    }
+
+
+
+    /* -----------------------------------------想定給与表 */
+    
+
+
+
+    /* -----------------------------------------インセンティブ制度 */
+
+    /* タイトル */
+    .incentive-ttl {
+        width: 100%;
+        margin-bottom: 20px;
+
+        h4 {
+            font-size: 21px;
+        }
+    }
+
+    /* 育成インセンティブ・紹介インセンティブ */
+    .incentive-nurturing,
+    .incentive-introduction {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nurturing-table,
+    .introduction-table,
+    .certification-table {
+        font-family: var(--font-noto);
+    }
+    /* 育成インセンティブ */
+
+    .nurturing-list,
+    .introduction-list {
+        color: var(--white);
+
+        .charge,
+        .introduce {
+            background-color: var(--light-brack);
+        }
+
+        .incentive-year,
+        .money-people {
+            background-color: var(--blue);
+        }
+
+        .incentive-month {
+            background-color: var(--light-blue);
+        }
+    }
+
+    .charge-item,
+    .introduce-item {
+        background-color: #EAEAEA;
+    }
+
+    .incentive-year-item {
+        background-color: #E1EFFF;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .incentive-month-item {
+        background-color: #E1EFFF;
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    .money-people-item {
+        text-align: right;
+        padding-right: 15px;
+    }
+
+    /* 資格インセンティブ */
+    .certification-table {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .certification-list {
+        color: var(--white);
+        background-color: var(--orange);
+    }
+
+    .institution,
+    .certification-name {
+        text-align: left;
+        padding-left: 15px;
     }
 
 
