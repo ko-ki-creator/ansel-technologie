@@ -120,6 +120,7 @@ p {
 .p-heading {
     margin-bottom: 50px;
     text-align: center;
+    position: relative;
 
     h2 {
         color: var(--blue);
@@ -137,6 +138,17 @@ p {
     p {
         margin-top: 20px;
     }
+}
+
+.search-container input[type="text"] {
+    background-color: #EDEDED;
+    border: 1px solid #949494;
+    padding: 5px 10px;
+    font-family: var(--font-hiragino);
+    color: #A2A2A2;
+    position: absolute;
+    top: 50%;
+    right: 0;
 }
 
 
@@ -398,7 +410,9 @@ PC
 
 .hamburger.active span:nth-child(1) {
     top: 12px;
+    left: 6px;
     transform: rotate(45deg);
+    width: 70%;
     height: 2px;
 }
 
@@ -407,8 +421,9 @@ PC
 }
 
 .hamburger.active span:nth-child(3) {
-    top: -13px;
-    width: 100%;
+    top: -12px;
+    right: 7px;
+    width: 70%;
     transform: rotate(-45deg);
     height: 2px;
 }
@@ -934,7 +949,6 @@ PC
         height: 180px;
         margin-bottom: 20px;
     }
-
 }
 
 .blog-date-category {
@@ -1651,7 +1665,7 @@ table {
     display: flex;
     margin-bottom: 50px;
 
-    p {
+    .requied {
         width: 20%;
         padding-top: 7px;
         letter-spacing: 0.05em;
@@ -1659,7 +1673,6 @@ table {
         &::after {
             content: '【必須】';
             color: #DF4242;
-
         }
     }
 
@@ -2299,6 +2312,152 @@ textarea {
 
 
 
+/* -----------------------------------------
+採用エントリーフォーム
+----------------------------------------- */
+.file-upload {
+    font-size: 24px;
+    font-weight: normal;
+    font-family: var(--font-hiragino);
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.file-txt {
+    margin-bottom: 20px;
+}
+
+.no-requied {
+    width: 20%;
+    padding-top: 7px;
+    letter-spacing: 0.05em;
+}
+
+.form-file {
+    width: 100%;
+    color: #ABABAB;
+    font-family: var(--font-hiragino);
+
+    &::file-selector-button {
+        width: 200px;
+        height: 55px;
+        color: #ABABAB;
+        border-radius: 5px;
+        border: 1px solid #616161;
+        margin-right: 20px;
+    }
+}
+
+
+
+/* -----------------------------------------
+ブログ
+----------------------------------------- */
+.p-blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+    margin-bottom: 50px;
+}
+
+.p-blog-content {
+    width: 32%;
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.pagi-prev-arrow,
+.pagi-next-arrow {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    transition: all .3s ease;
+    cursor: pointer;
+    position:relative;
+
+    &:hover {
+        background-color: var(--blue);
+    }
+}
+
+.pagi-prev-arrow {
+    transform: rotate(180deg);
+}
+
+/* .pagi-next-arrow {
+    transform: translateY(-50%);
+} */
+
+.pagi-prev-arrow::before,
+.pagi-next-arrow::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid var(--blue);
+    border-top: 1px solid var(--blue);
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: 0;
+    margin:auto;
+    transform:rotate(45deg);
+}
+
+.pagi-prev-arrow:hover::before,
+.pagi-next-arrow:hover::before {
+    border-right: 1px solid var(--white);
+    border-top: 1px solid var(--white);
+}
+
+.pagination-list {
+    display: flex;
+    gap: 5px;
+
+    a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid var(--blue);
+        border-radius: 20px;
+        place-content: center;
+        text-align: center;
+        font-family: var(--font-hiragino);
+        font-size: 12px;
+        color: var(--blue);
+        transition: all .3s ease;
+
+        &:hover {
+            color: var(--white);
+            background-color: var(--light-blue);
+        }
+    }
+}
+
+.pagination-item:first-child a {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+
+
+
+
+
+
 
 
 
@@ -2380,6 +2539,10 @@ SP
         p {
             text-align: left;
         }
+    }
+
+    .search-container input[type="text"] {
+        display: none;
     }
 
 
@@ -3009,7 +3172,7 @@ SP
         flex-direction: column;
         margin-bottom: 20px;
 
-        p {
+        .requied {
             width: 100%;
             padding-top: 0;
             margin-bottom: 10px;
@@ -3307,6 +3470,45 @@ SP
             }
         }
     }
+
+
+
+    /* -----------------------------------------
+    採用エントリーフォーム
+    ----------------------------------------- */
+
+    .no-requied {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .file-upload {
+        font-size: 18px;
+    }
+
+    .form-file::file-selector-button {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+
+    /* -----------------------------------------
+    ブログ
+    ----------------------------------------- */
+    .p-blog-container {
+        /* margin-bottom: 50px; */
+    }
+
+    .p-blog-content {
+        width: 100%;
+
+        img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
 
 
 
