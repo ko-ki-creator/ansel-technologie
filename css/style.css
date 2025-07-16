@@ -1687,15 +1687,15 @@ table {
     border: 1px solid #616161;
     border-radius: 5px;
     padding: 10px;
+    font-family: var(--font-hiragino);
 
     &::placeholder {
         color: #ABABAB;
-        font-family: var(--font-hiragino);
     }
 }
 
 .form-text {
-    width: 30%;
+    width: 345px;
 }
 
 .other {
@@ -1740,10 +1740,10 @@ textarea {
     min-width: 80%;
     min-height: 350px;
     padding: 10px 0 0 10px;
+    font-family: var(--font-hiragino);
 
     &::placeholder {
         color: #ABABAB;
-        font-family: var(--font-hiragino);
     }
 }
 
@@ -2457,7 +2457,8 @@ textarea {
 /* -----------------------------------------
 ブログページ
 ----------------------------------------- */
-.blog-page-heading {
+.blog-page-heading,
+.news-page-heading {
     margin-bottom: 50px;
     padding-top: 50px;
 
@@ -2602,6 +2603,43 @@ textarea {
     border-top: 1px solid var(--white);
 }
 
+
+
+/* -----------------------------------------
+お知らせ
+----------------------------------------- */
+.p-news-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #E0DEC7;
+    padding: 10px 20px;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: #EEE;
+    }
+}
+
+.news-date-category {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .news-category {
+        background-color: #EEE;
+        border: 1px solid #DDD;
+        padding: 2px 10px;
+    }
+}
+
+
+/* -----------------------------------------
+お知らせページ
+----------------------------------------- */
+.news-page-container p {
+    margin-bottom: 20px;
+}
 
 
 
@@ -3656,6 +3694,30 @@ SP
             width: 100%;
             margin-bottom: 20px;
         }
+    }
+
+
+    /* -----------------------------------------
+    ブログページ
+    ----------------------------------------- */
+    .blog-page-heading,
+    .news-page-heading {
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 21px;
+        }
+    }
+
+
+
+    /* -----------------------------------------
+    お知らせ
+    ----------------------------------------- */
+    .p-news-content {
+        flex-direction: column;
+        gap: 10px;
+        align-items: baseline;
     }
 
 
